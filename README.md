@@ -46,7 +46,7 @@ python login.py
 **5. Jalankan Scraper:**
 python scraper.py
 
-Analisis Tantangan Anti-Scraping & Solusinya
+## Analisis Tantangan Anti-Scraping & Solusinya
 Mengekstrak data dari platform Single Page Application (SPA) milik Meta menghadirkan beberapa tantangan teknis:
 
 *1. Rate-Limiting & Unauthenticated Block:*
@@ -64,7 +64,7 @@ Threads sering menggabungkan teks konten dengan elemen UI secara dinamis (sepert
 
 Solusi: Menggunakan pendekatan pembersihan bertahap: memfilter array text node, menggunakan Regex sapu jagat re.sub(r'(?i)\b(terjemahkan|translate)\b', '', teks) pada kalimat akhir, dan memformat ulang nilai time_ago (misalnya dari "1hari" menjadi "1 hari").
 
-Sampel Output
+## Sampel Output
 Skrip menyimpan data dalam dua format: JSON (untuk integritas struktur) dan CSV (untuk kemudahan analisis). Output .csv secara spesifik diformat dengan encoding UTF-8 sehingga emoji dan karakter khusus tetap terbaca secara utuh, ideal untuk langsung diimpor ke Pandas DataFrame.
 
 JSON Structure (Contoh Clean Dataset):
