@@ -2,7 +2,7 @@
 
 Proyek ini adalah instrumen ekstraksi data otomatis untuk platform Threads (berbasis SPA). Menggunakan Python dan Playwright, skrip ini menavigasi halaman publik, menangani *infinite scroll* yang kompleks, menerapkan autentikasi berbasis sesi (untuk menghindari rate-limit), dan mengekstrak metrik unggahan ke dalam format terstruktur.
 
-## 🚀 Fitur Utama
+## Fitur Utama
 - **Autentikasi Sesi:** Menyimpan *cookies* login (`auth.json`) untuk melewati batasan tampilan *Guest* dari Meta.
 - **Smart Infinite Scroll:** Menggunakan injeksi JavaScript (*smooth scrolling*) yang dipadukan dengan jeda acak dan mekanisme *jiggle* (PageUp/End) untuk memicu pemuatan asinkron (AJAX) secara natural.
 - **Dual Output System:** Menghasilkan dua set data secara bersamaan:
@@ -11,17 +11,16 @@ Proyek ini adalah instrumen ekstraksi data otomatis untuk platform Threads (berb
 
 ---
 
-## 🛠️ Persyaratan Teknologi
+## Persyaratan Teknologi
 *   Python 3.8+
 *   Playwright (Automation Library)
 *   Python-dotenv (Environment Management)
 
 ---
 
-## ⚙️ Cara Instalasi & Penggunaan
+## Cara Instalasi & Penggunaan
 
 **1. Clone Repositori & Setup Virtual Environment:**
-```bash
 git clone <URL_REPOSITORI_ANDA>
 cd threads-scraper
 python -m venv venv
@@ -65,7 +64,7 @@ Threads sering menggabungkan teks konten dengan elemen UI secara dinamis (sepert
 
 Solusi: Menggunakan pendekatan pembersihan bertahap: memfilter array text node, menggunakan Regex sapu jagat re.sub(r'(?i)\b(terjemahkan|translate)\b', '', teks) pada kalimat akhir, dan memformat ulang nilai time_ago (misalnya dari "1hari" menjadi "1 hari").
 
-📊 Sampel Output
+Sampel Output
 Skrip menyimpan data dalam dua format: JSON (untuk integritas struktur) dan CSV (untuk kemudahan analisis). Output .csv secara spesifik diformat dengan encoding UTF-8 sehingga emoji dan karakter khusus tetap terbaca secara utuh, ideal untuk langsung diimpor ke Pandas DataFrame.
 
 JSON Structure (Contoh Clean Dataset):
