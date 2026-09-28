@@ -21,7 +21,7 @@ Proyek ini adalah instrumen ekstraksi data otomatis untuk platform Threads (berb
 ## Cara Instalasi & Penggunaan
 
 **1. Clone Repositori & Setup Virtual Environment:**
-git clone <URL_REPOSITORI_ANDA>
+git clone https://github.com/Lunaruuuuu/threads-scraper.git
 cd threads-scraper
 python -m venv venv
 
